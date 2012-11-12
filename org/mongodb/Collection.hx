@@ -17,7 +17,7 @@ class Collection
 
 	public inline function findOne(?query:Dynamic, ?returnFields:Dynamic):Dynamic
 	{
-		Protocol.query(fullname, query, returnFields, 0, -1);
+		Protocol.query(fullname, query, returnFields, 0, 1);
 		return Protocol.getOne();
 	}
 
