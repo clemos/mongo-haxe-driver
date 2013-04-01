@@ -8,7 +8,7 @@ class Mongo implements Dynamic<Database>
 		Protocol.connect(host, port);
 	}
 
-	public inline function getDB(name:String):Database
+	public function getDB(name:String):Database
 	{
 		return new Database(name);
 	}
