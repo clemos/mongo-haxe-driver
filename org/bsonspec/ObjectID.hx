@@ -32,6 +32,11 @@ class ObjectID
 		return 'ObjectID("' + bytes.toHex() + '")';
 	}
 
+	public function toHex():String
+	{
+		return bytes.toHex();
+	}
+
 	public var bytes(default, null):Bytes;
 	private static var sequence:Int = 0;
 
